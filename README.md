@@ -24,7 +24,8 @@
 
 ## 实现动态图(文件大，可能要等待5秒)：
 
-<iframe height=498 width=510 src='http://player.youku.com/embed/XNDMxNDczNDAyMA==' frameborder=0 'allowfullscreen'></iframe>
+[![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
+
 
 
 
