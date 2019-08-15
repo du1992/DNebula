@@ -1,0 +1,72 @@
+/* 
+  英语
+*/
+
+//----------首页--------------
+"Home1"="nebulaTime";
+"Home2"="Blanked";
+"Home3"="replace";
+"Home4"="delete";
+"Home5"="complete";
+"Home6"="Click to modify the title";
+"Home7"="Already created";
+
+//----------弹框提示--------------
+"Popout1"="upgrade";
+"Popout2"="There is a new version";
+"Popout3"="Is it deleted？\n\nTasks deleted by nn can be retrieved in the 【RecycleBin】";
+"Popout4"="comment";
+"Popout5"="✨✨✨✨✨\n\nFive-star users can use it smoothly. Do you want to comment?🎖";
+
+//----------音乐标题--------------
+"music0"="Christmas🎄";
+"music1"="SpringFestival🎆";
+"music2"="Birthday🎂";
+"music3"="wedding";
+"music4"="Lovers";
+"music5"="meditation";
+"music6"="play";
+"music7"="fairyTale";
+"music8"="Relieve";
+"music9"="running";
+"music10"="surfing";
+"music11"="Drive a car";
+"music12"="To climb";
+"music13"="Cherub";
+"music14"="wonderful";
+"music15"="urgent";
+"music16"="Take a walk";
+"music17"="happy";
+"music18"="Pets";
+"music19"="Struggle";
+
+//----------任务内容--------------
+"Card0"="How much time is left before Christmas";
+"Card1"="CountDown";
+"Card2"="Cumulative";
+"Card3"="Need greater than current time";
+"Card4"="Need less than current time";
+"Card5"="Notes";
+"Card6"="Please set the time first";
+"Card7"="Not more than 10";
+//----------笔记--------------
+"Notes0"="increase";
+"Notes1"="Say something";
+"Notes2"="Words cannot be empty";
+"Notes3"="Failed to save pictures";
+"Notes4"="detailed";
+"Notes5"="Picture generation failure";
+
+//----------个人界面--------------
+"Personal0"="RecycleBin";
+"Personal1"="widget";
+"Personal2"="Instructions";
+"Personal3"="proposal";
+
+
+
+//----------时间--------------
+"Time0"="day";
+"Time1"="hr";
+"Time2"="min";
+"Time3"="sec";
