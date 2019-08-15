@@ -27,7 +27,29 @@
 [![视频](https://upload-images.jianshu.io/upload_images/3323633-0573f124bb4a5f2a.png)](https://player.youku.com/embed/XNDMxNDczNDAyMA==)
 
 
+## 应用国际化：
 
+由于国外下载量比国内多，我专门针对日本和美国做了本地化操作
+
+####  应用名字国际化：
+首先点击项目->PROJECT->Info->Localizations中添加要支持的语言
+![](https://upload-images.jianshu.io/upload_images/3323633-8db1d2f10e250ff0.png)
+
+然后就会多出两个文件来：
+![](https://upload-images.jianshu.io/upload_images/3323633-43ab47bf3cf271b0.png)
+
+#### 应用内容国际化：
+
+```
+宏定义/** 代码切换语言 **
+
+/#define Localized(key) NSLocalizedString(key, nil)
+
+使用
+
+Localized(@"内容")
+
+```
 
 
 ## 界面代码：
