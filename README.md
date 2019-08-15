@@ -23,16 +23,10 @@
 
 
 ## 实现动态图(文件大，可能要等待5秒)：
-<video id="video" controls="" preload="none"
-        poster="http://media.w3.org/2010/05/sintel/poster.png">
-         <source id="mp4" src="http://media.w3.org/2010/05/sintel/trailer.mp4" 
-             type="video/mp4">
-          <source id="webm" src="http://media.w3.org/2010/05/sintel/trailer.webm" 
-              type="video/webm">
-          <source id="ogv" src="http://media.w3.org/2010/05/sintel/trailer.ogv" 
-              type="video/ogg">
-          <p>Your user agent does not support the HTML5 Video element.</p>
- </video>
+<video src="http://structr.learn-anything.cn/video/道理/陈铭：像我这种老好人，根本没什么真朋友！不jue亲戚的人，根本没什么真亲戚！.mp4" width="320" height="180"
+controls="controls"></video>
+
+
 
 
 ## 用到的第三方SDK：
