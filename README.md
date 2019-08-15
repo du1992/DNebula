@@ -7,7 +7,7 @@
 
 
 ## 效果图：
-目前主要是有书籍页面，题库页面，论坛讨论和资讯新闻这几个大的板块：
+目前主要功能就是时间计时或者倒计时，关联笔记加通知栏小组件：
 
 <p align="center">
   <img width="200" src="Screenshots/1.png" hspace="30px" />
@@ -23,7 +23,16 @@
 
 
 ## 实现动态图(文件大，可能要等待5秒)：
-![](https://upload-images.jianshu.io/upload_images/3323633-2d3aac19ea207c00.gif)
+<video id="video" controls="" preload="none"
+        poster="http://media.w3.org/2010/05/sintel/poster.png">
+         <source id="mp4" src="http://media.w3.org/2010/05/sintel/trailer.mp4" 
+             type="video/mp4">
+          <source id="webm" src="http://media.w3.org/2010/05/sintel/trailer.webm" 
+              type="video/webm">
+          <source id="ogv" src="http://media.w3.org/2010/05/sintel/trailer.ogv" 
+              type="video/ogg">
+          <p>Your user agent does not support the HTML5 Video element.</p>
+ </video>
 
 
 ## 用到的第三方SDK：

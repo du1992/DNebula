@@ -12,13 +12,14 @@
 #import "DPoint.h"
 
 struct DMatrix {
-    NSInteger column;
-    NSInteger row;
-    CGFloat matrix[4][4];
+    NSInteger column;//列
+    NSInteger row; //行
+    CGFloat matrix[4][4];//二维数组,存储行列信息,(row,column)几行几列
 };
 
 typedef struct DMatrix DMatrix;
 
+//定义了一个函数(方法),该结构体有两个参数:行row和列column
 static DMatrix DMatrixMake(NSInteger column, NSInteger row) {
     DMatrix matrix;
     matrix.column = column;
@@ -32,6 +33,7 @@ static DMatrix DMatrixMake(NSInteger column, NSInteger row) {
     return matrix;
 }
 
+//该结构体有三个个参数:行row和列column和数据data(PS:这是个指针)
 static DMatrix DMatrixMakeFromArray(NSInteger column, NSInteger row, CGFloat *data) {
     DMatrix matrix = DMatrixMake(column, row);
     for (int i = 0; i < column; i ++) {
@@ -43,6 +45,7 @@ static DMatrix DMatrixMakeFromArray(NSInteger column, NSInteger row, CGFloat *da
     return matrix;
 }
 
+//定义了一个函数(方法),类型是XLMatrix 类型名是XLMatrixMutiply,该结构体有两个参数:XLMatrix a和XLMatrix b
 static DMatrix DMatrixMutiply(DMatrix a, DMatrix b) {
     DMatrix result = DMatrixMake(a.column, b.row);
     for(NSInteger i = 0; i < a.column; i ++){
@@ -55,6 +58,7 @@ static DMatrix DMatrixMutiply(DMatrix a, DMatrix b) {
     return result;
 }
 
+//自定义的方法包含三个参数(位置,方向,角度)
 static DPoint DPointMakeRotation(DPoint point, DPoint direction, CGFloat angle) {
     //    CGFloat temp1[4] = {direction.x, direction.y, direction.z, 1};
     //    DBMatrix directionM = DBMatrixMakeFromArray(1, 4, temp1);
@@ -67,6 +71,7 @@ static DPoint DPointMakeRotation(DPoint point, DPoint direction, CGFloat angle) 
     
     DMatrix result = DMatrixMakeFromArray(1, 4, *temp2);
     
+    //如果水平面存在的话,执行判断
     if (direction.z * direction.z + direction.y * direction.y != 0) {
         CGFloat cos1 = direction.z / sqrt(direction.z * direction.z + direction.y * direction.y);
         CGFloat sin1 = direction.y / sqrt(direction.z * direction.z + direction.y * direction.y);
@@ -75,6 +80,7 @@ static DPoint DPointMakeRotation(DPoint point, DPoint direction, CGFloat angle) 
         result = DMatrixMutiply(result, m1);
     }
     
+    //如果有值,执行判断
     if (direction.x * direction.x + direction.y * direction.y + direction.z * direction.z != 0) {
         CGFloat cos2 = sqrt(direction.y * direction.y + direction.z * direction.z) / sqrt(direction.x * direction.x + direction.y * direction.y + direction.z * direction.z);
         CGFloat sin2 = -direction.x / sqrt(direction.x * direction.x + direction.y * direction.y + direction.z * direction.z);
@@ -96,7 +102,7 @@ static DPoint DPointMakeRotation(DPoint point, DPoint direction, CGFloat angle) 
         DMatrix m2_ = DMatrixMakeFromArray(4, 4, *t2_);
         result = DMatrixMutiply(result, m2_);
     }
-    
+     //如果竖直平面有值的话,执行判断
     if (direction.z * direction.z + direction.y * direction.y != 0) {
         CGFloat cos1 = direction.z / sqrt(direction.z * direction.z + direction.y * direction.y);
         CGFloat sin1 = direction.y / sqrt(direction.z * direction.z + direction.y * direction.y);

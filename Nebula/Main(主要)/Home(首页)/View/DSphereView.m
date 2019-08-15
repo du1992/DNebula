@@ -38,7 +38,7 @@
 }
 
 #pragma mark - initial set
-
+//根据传入的数据，创建视图
 - (void)setCloudTags:(NSArray *)array
 {
     __weak typeof(self) weakSelf = self;
@@ -77,6 +77,7 @@
         
     }
     
+    //随机抛洒
     NSInteger a =  arc4random() % 10 - 5;
     NSInteger b =  arc4random() % 10 - 5;
     normalDirection = DPointMake(a, b, 0);
@@ -128,6 +129,9 @@
 
 - (void)timerStart
 {
+    /*
+     CADisplayLink是一个能让我们以和屏幕刷新率相同的频率将内容画到屏幕上的定时器。我们在应用中创建一个新的 CADisplayLink 对象，把它添加到一个runloop中，并给它提供一个 target 和selector 在屏幕刷新的时候调用。
+     */
     timer = [CADisplayLink displayLinkWithTarget:self selector:@selector(autoTurnRotation)];
     [timer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
 }
