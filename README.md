@@ -10,15 +10,15 @@
 目前主要功能就是时间计时或者倒计时，关联笔记加通知栏小组件：
 
 <p align="center">
-  <img width="200" src="Screenshots/1.png" hspace="30px" />
-  <img width="200" src="Screenshots/2.png" hspace="30px" />
-  <img width="200" src="Screenshots/3.png" hspace="30px" />
+  <img width="200" src="https://cdn.jsdelivr.net/gh/kevindcw/DNebula@1.0.1/Screenshots/1.png" hspace="30px" />
+  <img width="200" src="https://cdn.jsdelivr.net/gh/kevindcw/DNebula@1.0.1/Screenshots/2.png" hspace="30px" />
+  <img width="200" src="https://cdn.jsdelivr.net/gh/kevindcw/DNebula@1.0.1/Screenshots/3.png" hspace="30px" />
 </p>
 
 <p align="center">
-  <img width="200" src="Screenshots/4.png" hspace="30px" />
-  <img width="200" src="Screenshots/5.png" hspace="30px" />
-  <img width="200" src="Screenshots/6.png" hspace="30px" />
+  <img width="200" src="https://cdn.jsdelivr.net/gh/kevindcw/DNebula@1.0.1/Screenshots/4.png" hspace="30px" />
+  <img width="200" src="https://cdn.jsdelivr.net/gh/kevindcw/DNebula@1.0.1/Screenshots/5.png" hspace="30px" />
+  <img width="200" src="https://cdn.jsdelivr.net/gh/kevindcw/DNebula@1.0.1/Screenshots/6.png" hspace="30px" />
 </p>
 
 
